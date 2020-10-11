@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<!-- bootstrap link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	 crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+	 crossorigin="anonymous">
+
+	</script>
+	<!-- end of bootstrap link -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<!-- Navbar beginning  -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white">
+		<img class="navbar-brand" href="#" src="Logo.png" alt="Logo" width="100" height="60">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+       <span class="navbar-text">
+Here for the food    </span>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">Sign-up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+               
+                <i class='fas fa-user-alt' style='font-size:24px'></i>
+
+            </li>
+        </ul>
+    </div>
+
+  <!-- Navbar end -->
+</nav>
+    <h1> Welcome to your Campus Court</h1>
+    
+      <!-- Begin Search bar with a button -->
+
+<div class="container">
+    <br/>
+	<div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <form class="card card-sm">
+                                <div class="card-bodys row no-gutters align-items-center">
+                                   
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input id="userInput"class="form-control form-control-lg form-control-borderless" type="search" placeholder="Enter food name">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button onclick="search()" class="btn btn-lg btn-success" type="submit">Search</button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                      <!-- Dropdown button beginning -->
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Sort by   </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id= "l2h" href="#">Lowest to highest </a>
+    <a class="dropdown-item" id="h2l" href="#">Highest to lowest </a>
+    <a class="dropdown-item" id="calz" href="#">Calorie count(low->high)</a>
+    <!-- <a class="dropdown-item" id="rate" href="#">5->1 Rating</a> -->
+  </div>
+</div>
+<!-- Dropdown button end -->
+</div>
+<!-- End Search bar with a button -->
+
+
+    <!-- card 1 -->
+    
+    <div id="cardz">
+        <div class="card" id="french fries" style="width: 18rem;">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/9/5/1/WU0306H_perfect-french-fries_s4x3.jpg.rend.hgtvcom.826.620.suffix/1589465976850.jpeg" class="card-img-top" alt="A picture of fries">
+          <div class="card-body">
+            <p class="card-text">French Fries 
+               </p>
+            <p class="card-text">Calories: 365 
+               </p>    
+            <p class="card-text">Price: $6
+               </p>      
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card" id="pizza"style="width: 18rem;">
+          <img src="https://thebigmansworld.com/wp-content/uploads/2020/03/2-ingredient-pizza-dough-13.jpg"style="width:290px;height:255px;">
+          <div class="card-body">
+            <p class="card-text">Pizza 
+               </p>
+            <p class="card-text">Calories: 285 
+               </p>    
+            <p class="card-text">Price: $16
+               </p> 
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card" id="stuffed mushrooms" style="width: 18rem;">
+          <img src="https://www.dinneratthezoo.com/wp-content/uploads/2018/10/crab-stuffed-mushrooms-5.jpg"style="width:290px;height:255px;">
+          <div class="card-body">
+            <p class="card-text">Stuffed Mushrooms 
+               </p>
+            <p class="card-text">Calories: 85 
+               </p>    
+            <p class="card-text">Price: $7.50
+               </p>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card" id="mayo pasta" style="width: 18rem;">
+          <img src="https://lilluna.com/wp-content/uploads/2017/10/penne-pasta-resize-3.jpg" class="card-img-top" alt="A picture of fries">
+          <div class="card-body">
+            <p class="card-text">Mayo Pasta
+               </p>
+            <p class="card-text">Calories: 90 
+               </p>    
+            <p class="card-text">Price: $12
+               </p>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="card" id="hot dog" style="width: 18rem;">
+          <img src="https://5i0b63wqszy3rogfx27pxco1-wpengine.netdna-ssl.com/wp-content/uploads/Basic-Hot-Dogs2-600x500.jpg" class="card-img-top" alt="A picture of fries">
+          <div class="card-body">
+            <p class="card-text">Hot Dog
+               </p>
+            <p class="card-text">Calories: 151
+               </p>    
+            <p class="card-text">Price: $3
+               </p>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="card" id="salad" style="width: 18rem;">
+          <img src="https://detoxinista.com/wp-content/uploads/2013/05/cabbage-salad-recipe.jpg"style="width:290px;height:255px;">
+          <div class="card-body">
+            <p class="card-text">Salad
+               </p>
+            <p class="card-text">Calories: 450
+               </p>    
+            <p class="card-text">Price: $10
+               </p>
+          </div>
+        </div>
+             <!-- card 7 -->
+        <div class="card" id="boiled egg" style="width: 18rem;">
+          <img src="https://www.thespruceeats.com/thmb/e0rCKedUdPiX-xFKdfgZP5Dt0Yo=/4288x2412/smart/filters:no_upscale()/perfect-hard-boiled-eggs-995510-Hero_3-03d1b108d1ca489dad9e1f1d7fdba73f.jpg"style="width:290px;height:255px;">
+          <div class="card-body">
+            <p class="card-text">Boiled Egg 
+               </p>
+            <p class="card-text">Calories: 78 
+               </p>    
+            <p class="card-text">Price: $1
+               </p>
+          </div>
+        </div>
+             <!-- card 8 -->
+        <div class="card" id="apple" style="width: 18rem;">
+          <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail.jpg?w=756&h=567"style="width:290px;height:255px;">
+          <div class="card-body">
+            <p class="card-text">Apple 
+               </p>
+            <p class="card-text">Calories: 95 
+               </p>    
+            <p class="card-text">Price: $2
+               </p>
+          </div>
+        </div>
+                <!-- card 4 -->
+        <div class="card" id="mayo pasta" style="width: 18rem;">
+          <img src="https://nuts.com/images/rackcdn/ed910ae2d60f0d25bcb8-80550f96b5feb12604f4f720bfefb46d.ssl.cf1.rackcdn.com/33bd2f137ca869ba-yRVtb8fG-large.jpg" class="card-img-top" alt="A picture of fries">
+          <div class="card-body">
+            <p class="card-text">Gummies
+               </p>
+            <p class="card-text">Calories: 9
+               </p>    
+            <p class="card-text">Price: $.50
+               </p>
+          </div>
+        </div>
+    </div>
+    
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i style="color:white" class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i  style="color:white" class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i  style="color:white" class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i  style="color:white" class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <i  style="color:white" class="fab fa-dribbble"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a  style="color:white"  href="index.html"> Sampa.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

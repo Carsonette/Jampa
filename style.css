@@ -1,0 +1,92 @@
+body{
+  background: #6F905A;
+}
+.card{
+  color:#8176A0;
+  background-color: white;
+  display: inline-table;
+  margin: 10px 10px 30px 80px;
+}
+
+.card-img-top{
+  height:250px;
+}
+.card-body{
+  height:100px;
+  font-family: monospace;
+  padding: 0%;
+  margin: 2%;
+  line-height: .5;
+  font-size: 15px;
+}
+.navbar-text{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#A95252;
+  text-decoration: overline;
+  padding: 10px;
+  margin-top: 10px;
+  }
+h1{
+  font-family: cursive;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  padding-left: 80px;
+}
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.btn btn-lg btn-success{
+    
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+.col{
+  padding: 10px 30px 10px 10px;
+}
+.container{
+  display: inline;
+}
+
+.col-auto{
+padding-right: 15px;
+}
+/* comment */
+
+/* Centers the search bar */
+.col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 33.666667%;
+    max-width: 33.666667%;
+    margin:auto;
+}
+.dropdown{
+  padding-left: 80px;
+}
+.btn-secondary {
+    color: #8176A0;
+    background-color: white;
+    border-color: #6c757d;
+}
+.btn-success {
+    color: #fff;
+    background-color: #6F905A;
+    border-color: #28a745;
+    margin-right:30px;
+    
+}
+.fas{
+  padding:10px 10px 10px 25px ;
+}
+.page-footer{
+  background-color:#607d4d;
+  margin-top: 150px;
+  color: white
+}
