@@ -1,1 +1,1 @@
-# Jampa
+# Sampa
